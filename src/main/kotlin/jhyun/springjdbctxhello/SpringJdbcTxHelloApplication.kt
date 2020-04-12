@@ -66,5 +66,7 @@ open class PostService(
                 it.setRollbackOnly()
             }
         }
+        //
+        postRepository.deleteById(1)
     }
 }

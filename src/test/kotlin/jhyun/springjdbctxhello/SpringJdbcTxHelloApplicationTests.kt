@@ -29,7 +29,8 @@ class SpringJdbcTxHelloApplicationTests(
 		//
 		postService.doSome()
 		val allAfter = postService.findAll().toList()
-		assertEquals(allAfter.size, 2)
+		assertEquals(allAfter.size, 1)
+        assertEquals(allAfter[0].title, "three")
 	}
 
 }
